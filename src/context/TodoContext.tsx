@@ -1,4 +1,4 @@
-import { ChangeEvent, createContext, ReactNode, useContext, useState } from "react";
+import { createContext, ReactNode, useContext, useState } from "react";
 
 export interface TodoType {
     id:string;
@@ -8,7 +8,7 @@ export interface TodoType {
 }
 
 export interface TodoContextType {
-    todos:TodoType[];
+    Todos:TodoType[];
     addTodo: (todoText: string ) => void;
     toggleTodoStatus: (todoId: string) => void;
     deleteTodo: (todoId:string) => void;
@@ -80,7 +80,7 @@ export const TodoProvider = ({children}:TodoProviderProps) => {
 }
 
 // use context
-export const useTodo: () => TodoContextType | null = () => {
+export const useTodo = () => {
 
   const todosConsumer = useContext(TodoContext);
 

@@ -8,9 +8,9 @@ export const Navigation = () => {
 
   return (
     <nav>
-        <Link to="/" className={todoFilter === null?'active':''}>All</Link>
-        <Link to="/?todo=active" className={todoFilter === 'active'?'active':''}>Active</Link>
-        <Link to="/?todo=completed" className={todoFilter === 'completed'?'active':''}>Completed</Link>
+        <Link to="/todo-rts/" className={todoFilter === null?'active':''}>All</Link>
+        <Link to="/todo-rts/?todo=active" className={todoFilter === 'active'?'active':''}>Active</Link>
+        <Link to="/todo-rts/?todo=completed" className={todoFilter === 'completed'?'active':''}>Completed</Link>
     </nav>
   )
 }
