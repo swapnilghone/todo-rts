@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# TextUtils
 
-Currently, two official plugins are available:
+Welcome to the Todo - React + Typescript GitHub repository!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Todo-RTS is a simple todo app that allows users to manage their todo lists. It provides an option to mark tasks as done and enables users to sort the task list using active and completed filters. The app uses the browser's local storage to store tasks.
 
-## Expanding the ESLint configuration
+![](demo.gif)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+- Clone the repository:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+  git clone https://github.com/swapnilghone/todo-rts.git
+```
+- Navigate to the project directory:
+```bash
+  cd todo-rts
+```
+- Install dependencies:
+```bash
+  npm install
+```
+## Usage
+
+- To start the project:
+```bash
+npm run start
+```
+- To build the project:
+```bash
+npm run build
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Dependencies
+- Node version: >=20.11.0
+- Npm version: >=0.39.1
+- React version: 18.2
+- React router dom: 7.2
+- Typescript: 5.6
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## License
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Todo-RTS is licensed under the MIT License - see the [LICENSE.TXT](LICENSE.TXT) file for details
+
+
+## Authors
+
+**Swapnil Ghone** - [Todo-RTS](https://github.com/swapnilghone/todo-rts)
+
+
+## 🔗 Links
+[![github](https://img.shields.io/badge/github-333?style=for-the-badge&logo=github&logoColor=white)](https://github.com/swapnilghone)
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/swapnil-ghone/)
+
+## Contributing
+
+Contributions are always welcome!
+
+Please feel free to fork the repository and submit pull requests.
