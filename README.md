@@ -1,5 +1,5 @@
 
-# TextUtils
+# Todo - React + Typescript
 
 Welcome to the Todo - React + Typescript GitHub repository!
 
